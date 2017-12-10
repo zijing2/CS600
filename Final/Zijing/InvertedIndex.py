@@ -19,8 +19,8 @@ class InvertedIndex(object):
     def put(self, key, value):
         occurence_collection = self.get(key)
         if(occurence_collection == None):
-            self.occurence_list.append({value: 1})
-            ref = len(self.occurence_list)
+            self.occurence_list.append({"key": key, value: 1})
+            ref = len(self.occurence_list)-1
             self.tries.insert(key, ref)
         else:
             if occurence_collection.has_key(value):
@@ -28,5 +28,11 @@ class InvertedIndex(object):
             else:
                 occurence_collection[value] = 1
         return 
+    
+    # get the recommend keys when key in charactors
+    def getRecommendKey(self, string):
+        return self.tries.getRecommendKey(string)
+        
+
             
             
