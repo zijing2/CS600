@@ -2,6 +2,9 @@
 
 Implement the simplified Search Engine described in Section 23.5.4 for the pages of a small Web site. Use all the words in the pages of the site as index terms, excluding stop words such as articles, prepositions, and pronouns.
 
+## github
+https://github.com/zijing2/CS600/tree/master/Final/Zijing
+
 ## directory structure
 .
 ├── InvertedIndex.ipynb -- a dictionery implemented by Trie(runs in Jupyter)
@@ -27,7 +30,6 @@ Implement the simplified Search Engine described in Section 23.5.4 for the pages
 2. Scrapy (pip install scrapy)
 3. beatifulsoup (pip install beautifulsoup4)
 4. nltk (pip install nltk)
-5.
 
 ## deploying
 1. download or check out the project
